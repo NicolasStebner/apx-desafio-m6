@@ -1,10 +1,9 @@
 import { firestore, rtdb } from "./db";
-import express from "express";
-import cors from "cors";
 import { v4 as uuidv4 } from "uuid";
 
 const path = require("path");
-
+const express = require("express");
+const cors = require("cors");
 const port = process.env.PORT || 3005;
 const app = express();
 
