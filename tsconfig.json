@@ -1,12 +1,9 @@
 {
-	"compilerOptions": {
-		"target": "ES2016",
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
-		"allowSyntheticDefaultImports": true,
-		"outDir": "./test",
-	},
-	"files": [
-		"./server/index.ts"
-	]
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "ESNext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true
+    },
+    "files": ["./server/index.ts" ]
 }
