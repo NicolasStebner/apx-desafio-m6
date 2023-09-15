@@ -1,0 +1,99 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: "Odibee Sans";
+  height: 100vh;
+}
+/* Welcome Page */
+.root{
+  height: 100vh;
+}
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding:40px 20px 0;
+  max-width: 350px;
+  margin:0 auto;
+  height: 100vh;
+}
+.titulo{
+  margin-bottom:74px;
+}
+.subtitulo{
+  margin-bottom: 45px;
+}
+.button{
+  margin-bottom: 16px;
+}
+.contenedor-manos{
+  display: flex;
+  justify-content: space-around;
+  transform: translateY(60px);
+  transition: all 1s ease-in-out;
+}
+.inverted{
+  transform: rotate(3.142rad);
+}
+.active{
+  transform: translateY(5px);
+  transition: all 0.3s ease-in-out;
+}
+.inactive{
+  opacity: 45%;
+  transition: all 0.3s ease-in-out;
+}
+.intervaloContador{
+  font-weight:700;
+  font-size:100px;
+  text-align: center;
+}
+/*  */
+.contenedor-resultado {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.resultado-posta{
+  font-size: 41px;
+  text-align: center;
+}
+.resultado-score-text{
+  margin: 20px 0 ;
+}
+.resultado-score{
+  border: solid 10px black;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  min-width: 259px;
+  margin: 0 auto 20px;
+  font-size: 45px;
+}
+.button-volver-a-jugar{
+  min-width: 350px;
+  margin:0 auto;
+  justify-content: center;
+}
+/*INPUT*/
+.input{
+  border: solid 10px #182460;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 45px;
+}
+.label{
+  margin:0px;
+}
+::placeholder{
+  text-align: center;
+}
