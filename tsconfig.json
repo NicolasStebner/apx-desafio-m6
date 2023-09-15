@@ -4,6 +4,7 @@
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"allowSyntheticDefaultImports": true,
+        "types":["module"]
 	},
 	"files": ["./server/index.ts"]
 }
