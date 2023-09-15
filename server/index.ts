@@ -142,7 +142,7 @@ app.post("/room/:id/play", async (req, res) => {
 		}
 	}
 });
-/* app.get("*", (req, res) => {
+app.get("*", (req, res) => {
 	res.sendFile(path.join(__dirname, "../dist/index.html"));
 });
 
@@ -151,7 +151,7 @@ app.get("/env", async (req: any, res: any) => {
 		enviroment: process.env.NODE_ENV,
 	});
 });
-*/
+
 app.get("/history/:id", async (req: any, res: any) => {
 	const roomSnapshot = await roomsCollection.doc(req.params["id"]).get();
 	roomSnapshot.data();
