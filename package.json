@@ -14,7 +14,7 @@
         "build:back": "tsc",
         "build:front": "parcel build ./src/index.html",
         "build": "npm run build:front && npm run build:back",
-        "start": "node ./server/index.js"
+        "start": "node --experimental-modules ./server/index.js"
     },
     "dependencies": {
         "@types/uuid": "^9.0.3",
