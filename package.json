@@ -1,6 +1,6 @@
 {
     "name": "apx-desafio-m6",
-    "main":"index.js",
+    "main":"index.html",
     "type":"module",
     "version": "1.0.0",
     "license": "MIT",
