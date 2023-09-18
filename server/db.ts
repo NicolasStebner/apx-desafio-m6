@@ -20,7 +20,7 @@ const serviceAccount = {
 
 admin.initializeApp({
 	credential: admin.credential.cert(serviceAccount as any),
-	databaseURL: "https://apx-desafio-m6-9550f-default-rtdb.firebaseio.com/",
+	databaseURL: process.env.DB_URL,
 });
 
 const firestore = admin.firestore(); //ingreso al firestore
