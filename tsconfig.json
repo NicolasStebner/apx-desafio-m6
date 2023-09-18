@@ -1,10 +1,12 @@
 {
 	"compilerOptions": {
-		"target": "esnext",
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
-		"allowSyntheticDefaultImports": true,
-        "types":["node","express"]
+	  "target":"ESNext",
+	  "module":"commonjs",
+	  "moduleResolution": "node",
+	  "resolveJsonModule": true
 	},
-	"files": ["./server/index.ts"]
+	"ts-node": {
+        // Tell ts-node CLI to install the --loader automatically
+        "esm": true
+    }
 }

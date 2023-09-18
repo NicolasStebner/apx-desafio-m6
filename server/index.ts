@@ -1,9 +1,10 @@
 import { firestore, rtdb } from "./db";
+import * as express from "express";
+import * as cors from "cors";
 import { v4 as uuidv4 } from "uuid";
 
 const path = require("path");
-const express = require("express");
-const cors = require("cors");
+
 const port = process.env.PORT || 3005;
 const app = express();
 
@@ -142,16 +143,20 @@ app.post("/room/:id/play", async (req, res) => {
 		}
 	}
 });
-app.get("*", (req, res) => {
+/* app.get("*", (req, res) => {
 	res.sendFile(path.join(__dirname, "../dist/index.html"));
 });
-
 app.get("/env", async (req: any, res: any) => {
 	res.json({
 		enviroment: process.env.NODE_ENV,
 	});
 });
-
+*/
+app.get("/test", async (req: any, res: any) => {
+	res.json({
+		ok: "ok",
+	});
+});
 app.get("/history/:id", async (req: any, res: any) => {
 	const roomSnapshot = await roomsCollection.doc(req.params["id"]).get();
 	roomSnapshot.data();

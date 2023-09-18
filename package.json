@@ -1,6 +1,5 @@
 {
     "name": "apx-desafio-m6",
-    "type":"module",
     "version": "1.0.0",
     "license": "MIT",
     "devDependencies": {
@@ -14,7 +13,7 @@
         "build:back": "tsc",
         "build:front": "parcel build ./src/index.html",
         "build": "npm run build:front && npm run build:back",
-        "start": "node --experimental-modules ./server/index.js"
+        "start": "node --trace-warnings ./server/index.js"
     },
     "dependencies": {
         "@types/uuid": "^9.0.3",
