@@ -4,8 +4,13 @@ import * as cors from "cors";
 import { v4 as uuidv4 } from "uuid";
 
 const path = require("path");
+let port;
+if (process.env.NODE_ENV === "production") {
+	port = process.env.PORT;
+} else {
+	port = 3005;
+}
 
-const port = process.env.PORT || 3005;
 const app = express();
 
 app.use(express.static(path.join(__dirname, "../dist")));

@@ -10,7 +10,7 @@
     "scripts": {
         "dev:back": "nodemon --watch ./server/index.ts --exec ts-node ./server/index.ts",
         "dev:front": "parcel serve ./src/index.html",
-        "build:back": "tsc",
+        "build:back": "tsc ./server/index.ts",
         "build:front": "parcel build ./src/index.html",
         "build": "npm run build:front && npm run build:back",
         "start": "node --trace-warnings ./server/index.js"
