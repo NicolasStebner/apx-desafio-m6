@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 const path = require("path");
 let port;
 if (process.env.NODE_ENV === "production") {
-	port = process.env.OTRO;
+	port = process.env.PORT;
 } else {
 	port = 3005;
 }
