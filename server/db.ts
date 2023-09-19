@@ -13,6 +13,7 @@ const serviceAccount = {
 	token_uri: process.env.FIREBASE_TOKEN_URI,
 	auth_provider_x509_cert_url: process.env.FIREBASE_CERT,
 	client_x509_cert_url: process.env.FIREBASE_CLIENT_CERT,
+	universe_domain: process.env.UNIVERSE_DOMAIN,
 };
 
 admin.initializeApp({
