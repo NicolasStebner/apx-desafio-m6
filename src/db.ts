@@ -11,10 +11,10 @@ if (process.env.NODE_ENV == "production") {
 }
 
 const firebaseConfig = {
-	apiKey: "603dde33f096e2b02b1b29076795ce1d8f611eec",
-	databaseURL: "https://apx-desafio-m6-9550f-default-rtdb.firebaseio.com/",
-	projectId: "apx-desafio-m6-9550f",
-	authDomain: "apx-desafio-m6.firebaseapp.com",
+	apiKey: process.env.CONFIG_FIREBASE_API_KEY,
+	databaseURL: process.env.DB_URL,
+	projectId: process.env.FIREBASE_PROJECT_ID,
+	authDomain: process.env.CONFIG_FIREBASE_AUTH_DOMAIN,
 };
 
 const app = initializeApp(firebaseConfig);
