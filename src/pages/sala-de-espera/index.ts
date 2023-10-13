@@ -6,9 +6,9 @@ export async function initWaitingRoom(params) {
 	div.classList.add("contenedor");
 	div.innerHTML = `
         <div class="room-code">
-            <h2>Invita a tu amigo con este código</h2>
-	        <h1>${await gameState.publicId}</h1>
-            <h2>Que te diviertas!</h2>
+            <subtitle-el label="Invita a tu amigo con este código"></subtitle-el>
+	        <h1 class="centrado">${await gameState.publicId}</h1>
+            <subtitle-el label="Que te diviertas!"></subtitle-el>
         </div>
         <div class="contenedor-manos">
             <hand-el class="hand" hand="scissors"></hand-el>
