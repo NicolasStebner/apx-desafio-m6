@@ -6,9 +6,9 @@ export async function initReadyPage(params) {
 	div.classList.add("contenedor");
 	div.innerHTML = `
         <div >
-            <h2 class="main-title">Esperando a que </h2>
-            <h1 class="main-title">${await gameState.opponentName}</h1>
-            <h2 class="main-title">presione <br> Play!...</h2>
+            <subtitle-el label="Esperando a que"></subtitle-el>
+            <h1 class="centrado">${await gameState.opponentName}</h1>
+            <subtitle-el label="presione Play!"></subtitle-el>
         </div>
         <div class="contenedor-manos">
             <hand-el class="hand" hand="scissors"></hand-el>
